@@ -1,0 +1,8 @@
+<mvc:View controllerName="app.madhav92392.controller.Empty"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    	xmlns:f="sap.ui.layout.form">
+   	<Page id="idEmpty" title="Empty View">
+	<Image src="https://cdn.pixabay.com/photo/2016/10/12/23/23/mining-excavator-1736293_1280.jpg" width="99%" height="98%"></Image>
+	</Page>
+</mvc:View>
