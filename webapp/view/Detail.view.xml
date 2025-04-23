@@ -11,6 +11,8 @@
     >
         <content>
             <f:SimpleForm>
+        <Image src="{miningModel>image}" width="200px" height="200px" class="img" tooltip="Mining Image"/>
+
                 <Label text="Location ID" class="bold-class" design="Bold"  />
                 <Text text="{miningModel>LocationID}"  />
                 <Label text="Location Des" class="bold-class" design="Bold" />
@@ -31,6 +33,9 @@
                 <Text text="{miningModel>ManDays}" />
                 <Label text="Positive Outcome" class="bold-class" design="Bold" />
                 <Text text="{miningModel>ProbabilityOfPositiveOutcome}" />
+                <!-- <Label ></Label>  -->
+                <!-- <Image src="{miningModel>image}" width="300px" height="300px" class="imgg" tooltip="Mining Image"/> -->
+
             </f:SimpleForm>
             <IconTabBar>
                 <items>

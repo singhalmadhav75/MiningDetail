@@ -13,14 +13,14 @@
         <content>
             <List items="{miningModel>/miningData}" id="idListCtrl" mode="SingleSelectMaster" selectionChange="onItemSelect">
                 <items>
-                    <ObjectListItem title="{miningModel>LocationDescription}" number="{miningModel>LocationID}" numberState="Success">
+                    <ObjectListItem icon="{miningModel>image}" title="{miningModel>TypeOfMineralFromLocation}" number="{miningModel>LocationID}" numberState="Success">
                         <attributes>
-                            <ObjectAttribute text="{miningModel>MiningResourceAllocated}" title="Resource Allocated"/>
+                            <ObjectAttribute text="{miningModel>LocationDescription}" />
                             <ObjectAttribute text="{miningModel>TotalCost}" title="Total Cost"/>
                         </attributes>
-                        <!-- <firstStatus>
-                            <ObjectStatus text="{miningModel>ProbabilityOfPositiveOutcome}" title="Positive Outcome" state="{= ${miningModel>ProbabilityOfPositiveOutcome}==='High' ? 'Success' : ${miningModel>ProbabilityOfPositiveOutcome}==='Medium' ? 'Warning' : 'Error'}"/>
-                        </firstStatus> -->
+                        <firstStatus>
+                             <ObjectStatus text="{miningModel>ProbabilityOfPositiveOutcome}" state="{= ${miningModel>ProbabilityOfPositiveOutcome} === 'High' ? 'Success' : 'Error'}" class="sapMObjectStatus"/>
+                        </firstStatus>
                     </ObjectListItem>
                 </items>
             </List>
